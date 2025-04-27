@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local TextBox = Instance.new("TextBox")
@@ -20,16 +15,15 @@ local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
 local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
 local spin = Instance.new("TextButton")
 local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
-local fling = Instance.new("TextButton")
-local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
 local jumppower = Instance.new("TextButton")
-local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
-local Frame_2 = Instance.new("Frame")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
 local Kiked = Instance.new("TextButton")
-local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
-local Chut_2 = Instance.new("TextButton")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local TextButton_3 = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local Chut_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
 
 --Properties:
 
@@ -102,8 +96,9 @@ Chutmenu.Parent = Chut
 Chutmenu.BackgroundColor3 = Color3.fromRGB(202, 69, 255)
 Chutmenu.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Chutmenu.BorderSizePixel = 0
-Chutmenu.Position = UDim2.new(0.369948447, 0, 0.339920938, 0)
+Chutmenu.Position = UDim2.new(0.375598162, 0, 0.343873531, 0)
 Chutmenu.Size = UDim2.new(0.246982157, 0, 0.309971035, 0)
+Chutmenu.Visible = false
 
 UICorner_2.Parent = Chutmenu
 
@@ -155,21 +150,6 @@ spin.TextSize = 14.000
 UIAspectRatioConstraint_4.Parent = spin
 UIAspectRatioConstraint_4.AspectRatio = 1.240
 
-fling.Name = "fling"
-fling.Parent = Chutmenu
-fling.BackgroundColor3 = Color3.fromRGB(153, 49, 194)
-fling.BorderColor3 = Color3.fromRGB(0, 0, 0)
-fling.BorderSizePixel = 0
-fling.Position = UDim2.new(0.283783823, 0, 0.110561855, 0)
-fling.Size = UDim2.new(0.104729727, 0, 0.141242936, 0)
-fling.Font = Enum.Font.SourceSans
-fling.Text = "fling"
-fling.TextColor3 = Color3.fromRGB(0, 0, 0)
-fling.TextSize = 14.000
-
-UIAspectRatioConstraint_5.Parent = fling
-UIAspectRatioConstraint_5.AspectRatio = 1.240
-
 jumppower.Name = "jump power"
 jumppower.Parent = Chutmenu
 jumppower.BackgroundColor3 = Color3.fromRGB(153, 49, 194)
@@ -182,16 +162,8 @@ jumppower.Text = "jump"
 jumppower.TextColor3 = Color3.fromRGB(0, 0, 0)
 jumppower.TextSize = 14.000
 
-UIAspectRatioConstraint_6.Parent = jumppower
-UIAspectRatioConstraint_6.AspectRatio = 1.240
-
-Frame_2.Parent = Chutmenu
-Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(-1.76042151, 0, -0.975485981, 0)
-Frame_2.Size = UDim2.new(0, 1062, 0, 506)
-Frame_2.Visible = false
+UIAspectRatioConstraint_5.Parent = jumppower
+UIAspectRatioConstraint_5.AspectRatio = 1.240
 
 Kiked.Name = "Kiked"
 Kiked.Parent = Chutmenu
@@ -205,8 +177,21 @@ Kiked.Text = "No click"
 Kiked.TextColor3 = Color3.fromRGB(0, 0, 0)
 Kiked.TextSize = 14.000
 
-UIAspectRatioConstraint_7.Parent = Kiked
-UIAspectRatioConstraint_7.AspectRatio = 1.240
+UIAspectRatioConstraint_6.Parent = Kiked
+UIAspectRatioConstraint_6.AspectRatio = 1.240
+
+TextButton_3.Parent = Chutmenu
+TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderSizePixel = 0
+TextButton_3.Position = UDim2.new(0.465917408, 0, 0.143992379, 0)
+TextButton_3.Size = UDim2.new(0.461999118, 0, 0.786805689, 0)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "X"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 100.000
+
+UICorner_3.Parent = TextButton_3
 
 Chut_2.Name = "Chut"
 Chut_2.Parent = Chut
@@ -220,15 +205,15 @@ Chut_2.Text = "Chut"
 Chut_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 Chut_2.TextSize = 14.000
 
-UICorner_3.CornerRadius = UDim.new(1, 0)
-UICorner_3.Parent = Chut_2
+UICorner_4.CornerRadius = UDim.new(1, 0)
+UICorner_4.Parent = Chut_2
 
-UIAspectRatioConstraint_8.Parent = Chut_2
-UIAspectRatioConstraint_8.AspectRatio = 1.192
+UIAspectRatioConstraint_7.Parent = Chut_2
+UIAspectRatioConstraint_7.AspectRatio = 1.192
 
 -- Scripts:
 
-local function IJNGT_fake_script() -- TextButton.LocalScript 
+local function NNMM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local button = script.Parent -- Ссылка на кнопку
@@ -252,8 +237,8 @@ local function IJNGT_fake_script() -- TextButton.LocalScript
 	button.MouseButton1Click:Connect(checkKey) -- Подключаем функцию к событию клика по кнопке
 	
 end
-coroutine.wrap(IJNGT_fake_script)()
-local function MAJVAKR_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(NNMM_fake_script)()
+local function GCRNF_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local button = script.Parent -- Ссылка на кнопку
@@ -269,8 +254,47 @@ local function MAJVAKR_fake_script() -- TextButton_2.LocalScript
 	button.MouseButton1Click:Connect(openLink) -- Подключаем функцию к событию клика по кнопке
 	
 end
-coroutine.wrap(MAJVAKR_fake_script)()
-local function RLFHBYH_fake_script() -- Chutmenu.LocalScript 
+coroutine.wrap(GCRNF_fake_script)()
+local function ABQL_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(ABQL_fake_script)()
+local function VSPAXSD_fake_script() -- Chutmenu.LocalScript 
 	local script = Instance.new('LocalScript', Chutmenu)
 
 	local UIS = game:GetService('UserInputService')
@@ -308,82 +332,68 @@ local function RLFHBYH_fake_script() -- Chutmenu.LocalScript
 		end
 	end)
 end
-coroutine.wrap(RLFHBYH_fake_script)()
-local function OIBOC_fake_script() -- fly.LocalScript 
+coroutine.wrap(VSPAXSD_fake_script)()
+local function VQLP_fake_script() -- fly.Local 
 	local script = Instance.new('LocalScript', fly)
 
-	local isFlying = false
+	local player = game.Players.LocalPlayer
+	local userInputService = game:GetService("UserInputService")
+	local flying = false
+	local speed = 50 -- Настройте скорость полета
+	local bodyVelocity
+	local bodyGyro
 	
-	local camera = workspace.CurrentCamera
+	local function toggleFly()
+		flying = not flying
+		local character = player.Character or player.CharacterAdded:Wait()
 	
-	local char = game.Players.LocalPlayer.Character
+		if flying then
+			bodyVelocity = Instance.new("BodyVelocity")
+			bodyGyro = Instance.new("BodyGyro")
 	
-	local hrp = char:WaitForChild("HumanoidRootPart")
+			bodyVelocity.Velocity = Vector3.new(0, 0, 0)
+			bodyVelocity.MaxForce = Vector3.new(4000, 4000, 4000)
+			bodyVelocity.Parent = character:WaitForChild("HumanoidRootPart")
 	
+			bodyGyro.CFrame = character.HumanoidRootPart.CFrame
+			bodyGyro.MaxTorque = Vector3.new(4000, 4000, 4000)
+			bodyGyro.Parent = character:WaitForChild("HumanoidRootPart")
 	
+			while flying do
+				-- Получаем направление взгляда камеры
+				local camera = workspace.CurrentCamera
+				local direction = camera.CFrame.LookVector * speed
 	
-	local bodyPos = Instance.new("BodyPosition")
+				-- Устанавливаем скорость и направление
+				bodyVelocity.Velocity = direction + Vector3.new(0, 20, 0) -- Добавляем вертикальную скорость
+				bodyGyro.CFrame = camera.CFrame -- Следим за направлением камеры
 	
-	bodyPos.MaxForce = Vector3.new()
+				wait(0.1)
+			end
 	
-	bodyPos.D = 10
-	
-	bodyPos.P = 100
-	
-	bodyPos.Parent = hrp
-	
-	
-	
-	local bodyGyro = Instance.new("BodyGyro")
-	
-	bodyGyro.MaxTorque = Vector3.new()
-	
-	bodyGyro.D = 10
-	
-	bodyGyro.Parent = hrp
-	
-	
-	
-	script.Parent.MouseButton1Click:Connect(function()
-	
-		isFlying = not isFlying
-	
-	end)
-	
-	
-	
-	script.Parent.MouseButton2Click:Connect(function()
-	
-		isFlying = false
-	
-	end)
-	
-	
-	
-	game:GetService("RunService").RenderStepped:Connect(function()
-	
-		if isFlying then
-	
-			bodyPos.MaxForce = Vector3.new(math.huge, math.huge,math)
-	
-			bodyGyro.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
-	
-			bodyPos.Position = hrp.Position +((hrp.Position - camera.CFrame.Position).Unit * 10)
-	
-			bodyGyro.CFrame = CFrame.new(camera.CFrame.Position, hrp.Position)
-	
+			bodyVelocity:Destroy()
+			bodyGyro:Destroy()
 		else
-	
-			bodyPos.MaxForce = Vector3.new()
-	
-			bodyGyro.MaxTorque = Vector3.new()
-	
+			if bodyVelocity then bodyVelocity:Destroy() end
+			if bodyGyro then bodyGyro:Destroy() end
 		end
+	end
 	
+	-- Обработчик клика по кнопке для активации/деактивации полета
+	script.Parent.MouseButton1Click:Connect(toggleFly)
+	
+	-- Обработчик появления персонажа для отключения полета при смерти
+	player.CharacterAdded:Connect(function(character)
+		character:WaitForChild("Humanoid").Died:Connect(function()
+			flying = false -- Отключаем полет при смерти
+			if bodyVelocity then bodyVelocity:Destroy() end
+			if bodyGyro then bodyGyro:Destroy() end
+		end)
 	end)
+	
 end
-coroutine.wrap(OIBOC_fake_script)()
-local function IRQKZNY_fake_script() -- speed.LocalScript 
+coroutine.wrap(VQLP_fake_script)()
+local function RYFEKZA_fake_script() -- speed.LocalScript 
 	local script = Instance.new('LocalScript', speed)
 
 	local button = script.Parent -- Ссылка на кнопку
@@ -396,42 +406,55 @@ local function IRQKZNY_fake_script() -- speed.LocalScript
 	
 	button.MouseButton1Click:Connect(onButtonClicked) -- Подключаем функцию к событию нажатия на кнопку
 end
-coroutine.wrap(IRQKZNY_fake_script)()
-local function WDNIH_fake_script() -- spin.LocalScript 
+coroutine.wrap(RYFEKZA_fake_script)()
+local function OERTGOM_fake_script() -- spin.LocalScript 
 	local script = Instance.new('LocalScript', spin)
 
-	local button = script.Parent -- Ссылка на кнопку
-	local player = game.Players.LocalPlayer -- Получаем локального игрока
-	local character = player.Character or player.CharacterAdded:Wait() -- Получаем персонажа игрока
-	local humanoidRootPart = character:WaitForChild("HumanoidRootPart") -- Получаем HumanoidRootPart персонажа
+	local player = game.Players.LocalPlayer
+	local spinning = false
+	local bodyGyro
 	
-	local function rotateCharacter()
-		for i = 0, 3600, 1 do -- Вращаем на 360 градусов с шагом 5 градусов
-			humanoidRootPart.CFrame = humanoidRootPart.CFrame * CFrame.Angles(0, math.rad(5), 0) -- Вращение вокруг оси Y
-			wait(0.1) -- Ждем 0.1 секунды между шагами
+	local function toggleSpin()
+		local character = player.Character or player.CharacterAdded:Wait()
+	
+		if spinning then
+			-- Остановить вращение
+			spinning = false
+	
+			if bodyGyro then
+				bodyGyro:Destroy() -- Удаляем BodyGyro
+			end
+		else
+			-- Начать вращение
+			spinning = true
+	
+			bodyGyro = Instance.new("BodyGyro")
+			bodyGyro.MaxTorque = Vector3.new(4000, 4000, 4000)
+			bodyGyro.P = 10000 -- Устанавливаем силу управления
+			bodyGyro.Parent = character:WaitForChild("HumanoidRootPart")
+	
+			while spinning do
+				-- Вращаем персонажа
+				bodyGyro.CFrame = bodyGyro.CFrame * CFrame.Angles(0, math.rad(5), 0) -- Вращение на 5 градусов
+				wait(0.1)
+			end
 		end
 	end
 	
-	button.MouseButton1Click:Connect(rotateCharacter) -- Подключаем функцию к событию клика по кнопке
+	-- Обработчик клика по кнопке для включения/выключения вращения
+	script.Parent.MouseButton1Click:Connect(toggleSpin)
+	
+	-- Обработчик появления персонажа для отключения вращения при смерти
+	player.CharacterAdded:Connect(function(character)
+		character:WaitForChild("Humanoid").Died:Connect(function()
+			spinning = false -- Отключаем вращение при смерти
+			if bodyGyro then bodyGyro:Destroy() end
+		end)
+	end)
 	
 end
-coroutine.wrap(WDNIH_fake_script)()
-local function KITQOM_fake_script() -- fling.LocalScript 
-	local script = Instance.new('LocalScript', fling)
-
-	local button = script.Parent -- Ссылка на кнопку
-	local player = game.Players.LocalPlayer -- Ссылка на локального игрока
-	local remote = game.ReplicatedStorage:WaitForChild("ThrowPlayer") -- Ссылка на RemoteEvent
-	
-	local function throwPlayer()
-		remote:FireServer() -- Отправляем запрос на сервер для выброса игрока
-	end
-	
-	button.MouseButton1Click:Connect(throwPlayer) -- Подключаем функцию к событию клика по кнопке
-	
-end
-coroutine.wrap(KITQOM_fake_script)()
-local function ZCKC_fake_script() -- jumppower.LocalScript 
+coroutine.wrap(OERTGOM_fake_script)()
+local function PJXE_fake_script() -- jumppower.LocalScript 
 	local script = Instance.new('LocalScript', jumppower)
 
 	local button = script.Parent -- Ссылка на кнопку
@@ -445,8 +468,8 @@ local function ZCKC_fake_script() -- jumppower.LocalScript
 		button.MouseButton1Click:Connect(onButtonClicked) -- Подключаем функцию к событию нажатия на кнопку
 	
 end
-coroutine.wrap(ZCKC_fake_script)()
-local function OMPYO_fake_script() -- Kiked.LocalScript 
+coroutine.wrap(PJXE_fake_script)()
+local function MDONXYW_fake_script() -- Kiked.LocalScript 
 	local script = Instance.new('LocalScript', Kiked)
 
 	local button = script.Parent -- Ссылка на кнопку
@@ -459,8 +482,33 @@ local function OMPYO_fake_script() -- Kiked.LocalScript
 	button.MouseButton1Click:Connect(kickPlayer) -- Подключаем функцию к событию клика по кнопке
 	
 end
-coroutine.wrap(OMPYO_fake_script)()
-local function KFYRNV_fake_script() -- Chut_2.LocalScript 
+coroutine.wrap(MDONXYW_fake_script)()
+local function DEEII_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	local player = game.Players.LocalPlayer
+	local button = script.Parent -- Это ссылка на кнопку
+	
+	-- Укажите имя объекта, который вы хотите удалить
+	local objectNameToRemove = "ScreenGui" -- Замените "ИмяВашегоОбъекта" на имя объекта, который вы хотите удалить
+	
+	local function removeObject()
+		local objectToRemove = game.Players.LocalPlayer.PlayerGui:FindFirstChild(objectNameToRemove)
+	
+		if objectToRemove then
+			objectToRemove:Destroy() -- Удаляем объект
+			print(objectNameToRemove .. " был удален!") -- Сообщение в Output для подтверждения
+		else
+			print(objectNameToRemove .. " не найден в Workspace.") -- Сообщение если объект не найден
+		end
+	end
+	
+	-- Обработчик клика по кнопке для удаления объекта
+	button.MouseButton1Click:Connect(removeObject)
+	
+end
+coroutine.wrap(DEEII_fake_script)()
+local function IUPOOQV_fake_script() -- Chut_2.LocalScript 
 	local script = Instance.new('LocalScript', Chut_2)
 
 	local Button = script.Parent
@@ -491,8 +539,8 @@ local function KFYRNV_fake_script() -- Chut_2.LocalScript
 	
 	Button.MouseButton1Click:Connect(onClick)
 end
-coroutine.wrap(KFYRNV_fake_script)()
-local function GOYGUEC_fake_script() -- Chut_2.LocalScript 
+coroutine.wrap(IUPOOQV_fake_script)()
+local function HAVLA_fake_script() -- Chut_2.LocalScript 
 	local script = Instance.new('LocalScript', Chut_2)
 
 	local UIS = game:GetService('UserInputService')
@@ -530,8 +578,8 @@ local function GOYGUEC_fake_script() -- Chut_2.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GOYGUEC_fake_script)()
-local function PBDMLN_fake_script() -- Chut.LocalScript 
+coroutine.wrap(HAVLA_fake_script)()
+local function QEUHRP_fake_script() -- Chut.LocalScript 
 	local script = Instance.new('LocalScript', Chut)
 
 	
@@ -555,4 +603,4 @@ local function PBDMLN_fake_script() -- Chut.LocalScript
 	end
 	
 end
-coroutine.wrap(PBDMLN_fake_script)()
+coroutine.wrap(QEUHRP_fake_script)()
